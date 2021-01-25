@@ -1,4 +1,4 @@
-package com.work.thisandstatic;
+package com.work.this_and_static;
 /**
  * Licensed to CMSR,Inc. under the terms of the CMSR
  * Software License version 1.0.
@@ -12,7 +12,7 @@ package com.work.thisandstatic;
 
 /**
  *@ClassName StaticTest01
- *@Description TODO
+ *@Description static关键字
  *@Author zhutao
  *@Date 2021/1/20 17:09
  *@Version 1.0

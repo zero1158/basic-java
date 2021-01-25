@@ -1,4 +1,4 @@
-package com.work.supertest;
+package com.work.super_test;
 /**
  * Licensed to CMSR,Inc. under the terms of the CMSR
  * Software License version 1.0.

@@ -12,7 +12,7 @@ package com.work.duotai;
 
 /**
  *@ClassName Test01
- *@Description TODO
+ *@Description 多态
  *@Author zhutao
  *@Date 2021/1/20 18:44
  *@Version 1.0

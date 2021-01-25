@@ -1,4 +1,4 @@
-package com.work.thisandstatic;
+package com.work.this_and_static;
 /**
  * Licensed to CMSR,Inc. under the terms of the CMSR
  * Software License version 1.0.

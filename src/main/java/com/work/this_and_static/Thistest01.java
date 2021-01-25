@@ -1,9 +1,9 @@
-package com.work.thisandstatic;
+package com.work.this_and_static;
 
 
 /**
  *@ClassName test01
- *@Description TODO
+ *@Description this关键字
  *@Author zhutao
  *@Date 2021/1/20 11:25
  *@Version 1.0

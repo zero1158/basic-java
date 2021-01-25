@@ -1,4 +1,4 @@
-package com.work.thisandstatic;
+package com.work.this_and_static;
 
 /**
  *@ClassName Student
