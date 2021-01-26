@@ -18,4 +18,33 @@ package com.work.abstract_test;
  *@Version 1.0
  **/
 public class ImplementsTest {
+
+}
+
+interface A{
+    public void eat();
+}
+
+interface B{
+    public void run();
+}
+
+/**
+ * 接口之间属于继承关系,并且接口可以继承多个接口,但其实现类需要实现多个接口的方法
+ */
+interface C extends A,B{
+}
+
+/**
+ * 需要实现接口A,B中的方法
+ */
+class D implements C{
+    @Override
+    public void eat() {
+        System.out.println("D--->吃饭");
+    }
+    @Override
+    public void run() {
+        System.out.println("D--->跑步");
+    }
 }
