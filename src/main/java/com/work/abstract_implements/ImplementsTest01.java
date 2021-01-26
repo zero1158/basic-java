@@ -1,4 +1,4 @@
-package com.work.abstract_test;
+package com.work.abstract_implements;
 /**
  * Licensed to CMSR,Inc. under the terms of the CMSR
  * Software License version 1.0.
@@ -12,12 +12,17 @@ package com.work.abstract_test;
 
 /**
  *@ClassName ImplementsTest
- *@Description 接口
+ *@Description 接口-->和类是并列结构
+ *                    实现接口的类必须覆盖接口中所有方法
+ *                    接口之间可以继承,且可以是多继承
  *@Author zhutao
  *@Date 2021/1/25 16:28
  *@Version 1.0
  **/
-public class ImplementsTest {
+public class ImplementsTest01 {
+    public static void main(String[] args) {
+        D d = new D();
+    }
 
 }
 

@@ -1,4 +1,4 @@
-package com.work.abstract_test;
+package com.work.abstract_implements;
 /**
  * Licensed to CMSR,Inc. under the terms of the CMSR
  * Software License version 1.0.
