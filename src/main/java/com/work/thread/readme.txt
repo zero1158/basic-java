@@ -5,6 +5,9 @@
 并行:多个人同时做多个事情
 并发:多个人同时做一件事情
 
+一般建议使用实现Runnable接口的方式创建线程,因为Thread也是实现了Runnable接口的,
+所以继承Thread类实际还是实现了Runnable接口
+
 创建的线程的两种方式:
    1.继承 Thread 类-->extends Thread
    2.实现
