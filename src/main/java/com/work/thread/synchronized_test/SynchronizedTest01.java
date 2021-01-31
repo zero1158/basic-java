@@ -57,10 +57,10 @@ class ThreadSyn01 extends Thread{
                     }
                     System.out.println(currentThread().getName()+"-->同步代码块,当前票数: "+ticket);
                     ticket--;
+                }else {
+                    break;
                 }
             }
-
-
         }
     }
 }

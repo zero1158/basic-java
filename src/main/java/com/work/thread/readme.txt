@@ -8,11 +8,11 @@
 一般建议使用实现Runnable接口的方式创建线程,因为Thread也是实现了Runnable接口的,
 所以继承Thread类实际还是实现了Runnable接口
 
-创建的线程的两种方式:
+创建的线程的四种方式:Thread,Runnable,Callable,Threadpool
    1.继承 Thread 类-->extends Thread
-   2.实现
+   2.实现 Runnable 接口 -->implements Runnable
 
-创建线程的步骤:
+创建线程  测试点:
     1:创建线程并执行->和主线程区分开
     2:启动线程要注意的点: ->不能用run()
                         ->一个线程只能start()一次,原因看源码
@@ -31,7 +31,20 @@
     方式二:同步方法
         synchronized修饰的方法
 
+    方式三:Lock
+
+
 
     解决多线程中的单例模式问题 - 懒汉式
+
+死锁:不同的线程分别占用对方需要的资源不放弃,都在等对方放弃资源,就形成了死锁
+
+线程通信:wait(),notify(),notifyAll()
+
+JDK1.5之后新增的创建的线程的两种方式:
+    1.实现Callable接口 --->相对于Runnable接口,功能更加强大,可以返回值,获取异常等
+
+    2.创建线程池 --->常用
+
 
 

@@ -22,16 +22,16 @@ public class SynchronizedTest02 {
     public static void main(String[] args) {
         RunnableSyn01 syn01 = new RunnableSyn01();
         //同步代码块
-//        Thread thread01 = new Thread(syn01);
-//        Thread thread02 = new Thread(syn01);
-//        thread01.start();
-//        thread02.start();
+        Thread thread01 = new Thread(syn01);
+        Thread thread02 = new Thread(syn01);
+        thread01.start();
+        thread02.start();
 
-        RunnableSyn02 syn02 = new RunnableSyn02();
-        Thread thread03 = new Thread(syn02);
-        Thread thread04 = new Thread(syn02);
-        thread03.start();
-        thread04.start();
+//        RunnableSyn02 syn02 = new RunnableSyn02();
+//        Thread thread03 = new Thread(syn02);
+//        Thread thread04 = new Thread(syn02);
+//        thread03.start();
+//        thread04.start();
     }
 }
 
@@ -53,6 +53,8 @@ class RunnableSyn01 implements Runnable{
                     }
                     System.out.println(Thread.currentThread().getName()+"-->同步代码块,当前票数: "+ticket);
                     ticket--;
+                }else {
+                    break;
                 }
             }
         }
