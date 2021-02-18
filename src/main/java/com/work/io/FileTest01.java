@@ -22,6 +22,7 @@ import java.io.File;
 public class FileTest01 {
     public static void main(String[] args) {
         File file = new File("readme.txt");
+        //输出文件名
         System.out.println(file);
     }
 
