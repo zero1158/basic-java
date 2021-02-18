@@ -1,4 +1,4 @@
-package com.work.collection.map.readme;
+package com.work.collection.map;
 /**
  * Licensed to CMSR,Inc. under the terms of the CMSR
  * Software License version 1.0.
