@@ -15,6 +15,13 @@
         <spring-boot.version>2.3.7.RELEASE</spring-boot.version>
     </properties>
 
+    <parent>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <version>2.0.4.RELEASE</version>
+        <relativePath/>
+    </parent>
+
 
     <dependencies>
 
@@ -34,13 +41,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
 
         <dependency>
@@ -52,7 +52,8 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <scope>test</scope>
+            <!--只能在test文件夹中使用-->
+<!--            <scope>test</scope>-->
         </dependency>
     </dependencies>
 
