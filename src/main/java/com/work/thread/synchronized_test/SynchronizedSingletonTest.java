@@ -19,16 +19,17 @@ package com.work.thread.synchronized_test;
  **/
 public class SynchronizedSingletonTest {
     public static void main(String[] args) {
-//        SingletonTest instance01 = SingletonTest.getInstance();
-//        SingletonTest instance02 = SingletonTest.getInstance();
-//        System.out.println(instance01 == instance02);
+        SingletonTest instance01 = SingletonTest.getInstance();
+        SingletonTest instance02 = SingletonTest.getInstance();
+        System.out.println(instance01 == instance02);
+        System.out.println(instance01.toString());
+        System.out.println(instance02.toString());
 
-        SingletonTest instance03 = SingletonTest.getInstance01();
-        SingletonTest instance04 = SingletonTest.getInstance01();
-        System.out.println(instance03 == instance04);
-
-        System.out.println(instance03.toString());
-        System.out.println(instance04.toString());
+//        SingletonTest instance03 = SingletonTest.getInstance01();
+//        SingletonTest instance04 = SingletonTest.getInstance01();
+//        System.out.println(instance03 == instance04);
+//        System.out.println(instance03.toString());
+//        System.out.println(instance04.toString());
     }
 }
 

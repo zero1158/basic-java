@@ -1,0 +1,10 @@
+自旋锁 :
+    是指尝试获取锁的线程不会立即阻塞,而是采用循环的方式去获取锁,这样的好处是减少线程上下文切换的消耗,缺点是会消耗CPU
+    本质 :是while循环 + CAS(CompareAndSwap)
+CAS : 全称Compare-And-Swap,是CPU的一条**并发原语**,简单来说就是 --比较并交换
+    1.在AtomicXxx原子类中有大量使用 :如 AtomicInteger(原子整型类)中的compareAndSet()方法
+    2.我们也可以通过AtomicReference<>(原子引用类)自定义原子类,然后调用其中的compareAndSet()方法,达到上述效果
+    3.由CAS引出的ABA问题
+        解决方式 : 加入时间戳(版本号) -->使用AtomicStampedReference类,该类构造器中有两个参数,一个是期望值,一个是版本号
+                  在使用AtomicStampedReference.compareAndSet()时需要传入四个参数 : 期望值,更新值,期望版本号,更新版本号
+                  只有在期望值与期望版本号都相同时,才会更新值和版本号
