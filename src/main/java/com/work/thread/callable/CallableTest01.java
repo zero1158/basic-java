@@ -36,6 +36,8 @@ public class CallableTest01 {
         Thread thread = new Thread(task);
         thread.start();
 
+
+
         /**
          * 使用泛型的方式获取返回值
          */
