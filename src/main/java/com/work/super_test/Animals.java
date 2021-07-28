@@ -10,6 +10,10 @@ package com.work.super_test;
  * 2021/1/20          zhutao                 1.0            Initial Version
  **/
 
+import lombok.Data;
+
+import java.util.Objects;
+
 /**
  *@ClassName Animals
  *@Description TODO
@@ -17,7 +21,26 @@ package com.work.super_test;
  *@Date 2021/1/20 18:32
  *@Version 1.0
  **/
+@Data
 public class Animals {
+
+    private String name;
+    private String age;
+    private String aderss;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Animals animals = (Animals) o;
+        System.out.println("开始调用equals()方法");
+        return Objects.equals(name, animals.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, aderss);
+    }
 
     public void run(){
         System.out.println("跑.............");
