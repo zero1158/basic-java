@@ -60,6 +60,7 @@ public class ReflectionTest02 {
         System.out.println("调用静态常量 : "+o1);
     }
 
+
     /**
      * 反射获取方法
      */
